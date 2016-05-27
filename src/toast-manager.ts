@@ -3,7 +3,7 @@ import {Toast} from './toast';
 
 @Injectable()
 export class ToastsManager {
-    @Output() onAddToast: EventEmitter<Toast> = new EventEmitter()
+    @Output() onAddToast: EventEmitter<Toast> = new EventEmitter<Toast>();
     @Output() onclearToasts = new EventEmitter();   
 
     show(toast: Toast) {       
